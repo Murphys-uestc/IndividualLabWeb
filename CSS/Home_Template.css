@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*设置正文格式*/
+#content{
+	padding: 8% 0 0 0;
+}/*上右下左,顺时针*/
+
+
+#content_left{
+	position:absolute;
+	top:22%;
+	margin-left:6%;
+	
+	}
+	
+#content_right{
+	position: absolute;
+	top: 15%;
+	right:6%;
+	}
+
+#content_middle{
+	position: absolute;
+	margin-right: 18%;
+	margin-left:18%;
+
+}
+
+
+
+
+#Welcomediag{
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+
+
+	-webkit-animation-name: anim;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	}
+	
+#Welcomediag h1{
+	font-family: Arial;
+	text-align: center;
+	font-size: 1em;
+
+}
+
+#Welcomediag h2{
+	font-family: Arial;
+	text-align: center;
+	font-size: 0.5em;	
+	
+}
+
+
+
+.large_text{
+		position: absolute;
+	
+		text-shadow: none;
+		font-weight: 800;
+		font-size: 36px;
+		line-height: 36px;
+		font-family: 'Open Sans', sans;
+		margin: 0px;
+		border-width: 0px;
+		border-style: none;
+		white-space:nowrap;
+		text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+
+
+	
+
+.tp-simpleresponsive >ul >li{
+	list-stye:none;
+	position:absolute;
+	visibility:hidden;
+}
+
+
+@-webkit-keyframes anim {
+
+	100% {
+		background:rgba(0,0,0,1);
+	}
+}
+
+
+
+
+
+

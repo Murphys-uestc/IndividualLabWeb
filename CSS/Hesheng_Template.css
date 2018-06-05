@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*设置正文格式*/
+#content{
+	padding: 5% 5% 5% 5%;
+}/*上右下左,顺时针*/
+
+
+
+#Content_div{margin-left:10px;margin-right:10px;opacity: 1;
+	font-family:Arial;text-align:justify;}	
+	
+.left_div{padding-top:25px;width:70%;float:left;font-size:14px;line-height:1.5em;font-weight:600;}
+.right_div{padding-top:10px;width:28%;float:right;font-size:12px;line-height:2em;}
+
+#Address_div{font-size:13px;line-height:1.5em;float:left;font-weight:normal;}
+.img{float:right;padding-bottom:10px;}
+
+

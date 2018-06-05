@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+
+
+#logo_div {
+	position:fixed;
+	width:100%;
+	height:100px;
+	top:80px;
+	color:red;
+	}
+
+
+#content_left{
+    width:200px;
+	height:600px;
+	position:absolute;
+	top:140px;
+	left:0px;
+	margin-left:40px;
+	}
+	
+#content_right{
+	width: 200px;
+	height: 600px;
+	position: absolute;
+	top: 78px;
+	right: 8px;
+	}
+
+#content_middle{
+height:600px;
+margin:0 200px 0 200px;
+
+}
+
+
+	
+#Navidiag{
+	color: #fff;
+	width:120px;;
+	float:left;
+	}
+
+
+#Logodiag{
+	float:left;
+	height:100px;
+	}
+
+
+#Welcomediag{
+	position: fixed;
+	margin-top: 100px;
+	margin-left:200px;
+	max-height:320px;
+        padding-top:150px;
+        
+
+	color: #fff;
+	
+	max-width:850px !important;
+	
+	background-color: rgba(0,0,0,0.2);
+
+	-webkit-animation-name: anim;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	}
+	
+#Welcomediag h1{
+	font-family: Arial;
+	text-align: center;
+	font-size: 28px;
+	margin:25px;
+        	
+}
+
+#Welcomediag h2{
+	font-family: Arial;
+	text-align: center;
+	font-size: 15px;
+        margin:20px;	
+	
+}
+
+
+
+
+
+
+@-webkit-keyframes anim {
+
+	100% {
+		background:rgba(0,0,0,1);
+	}
+}

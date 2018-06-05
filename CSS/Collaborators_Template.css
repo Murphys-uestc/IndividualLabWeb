@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+#content{
+	padding: 5% 5% 5% 5%;
+}/*上右下左,顺时针*/
+
+
+#BigTitle_div {
+	margin:50px 20px 0px 10px;opacity: 1;
+	font-family:Perpetua;text-align:center;font-size:30px;Font-style:italic;font-weight:bold;}
+	
+#Content_div{margin-left:10px;margin-right:10px;opacity: 1;
+	font-family:Arial;text-align:justify;}	
+	
+
+.left_div{width:55%;float:left;}
+.right_div{width:45%;float:right;}
+#Content_div li{font-family:Arial;font-size:14px;line-height:2em;}	
+	
