@@ -1,5 +1,6 @@
 ##哈佛医学院实验室宣传网站
 http://nmr.mgh.harvard.edu/bid/Home.html
+
 ###网页需求
 1、样式
  - 首页渐变效果
