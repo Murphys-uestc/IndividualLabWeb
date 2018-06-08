@@ -1,120 +1,262 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!--viewport是网页默认的宽度和高度，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100% -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--viewport是网页默认的宽度和高度，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100% -->
 
-<title>LiuLab|Download</title>
+  <title>LiuLab|Download</title>
 
+  <!--添加导航条的有关css js-->
+  <link rel="stylesheet" href="CSS/DownLoad_Template.css" type="text/css" />
+  <link rel="stylesheet" href="CSS/Frames_Template.css" type="text/css" />
 
+  <!-- Vue安装 -->
+  <script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
 
-<!--添加导航条的有关css js-->
-<link rel="stylesheet" href="CSS/DownLoad_Template.css" type="text/css" />
-<link rel="stylesheet" href="CSS/Frames_Template.css" type="text/css" />
+  <!-- ElementUI安装 -->
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
-<script type="text/javascript" src="CSS/NavigationBars.js"></script>
+  <!--添加动态图显示的有关css js-->
+  <script type="text/javascript" src="CSS/jquery.min.js"></script>
 
-<!--添加动态图显示的有关css js-->
-<script type="text/javascript" src="CSS/jquery.min.js"></script>
-
-
-
-
-
-<style type="text/css">
-*{margin:0; padding:0}<!--初始化代码，使网页顶格显示-->
-
-
-</style>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0
+    }
+  </style>
 </head>
 
 <body>
+  <div id="app">
+    <div id="HeadTitle">
+      <div id="Navigation">
+        <ul>
+          <li>
+            <a href="Home.html">Home</a>
+          </li>
+          <li>
+            <a href="Research.html">Research</a>
+          </li>
+          <li>
+            <a href="Members.html">Members</a>
+          </li>
 
-<div id = "HeadTitle">
-  <div id="Navigation">
-   <ul>
-      <li><a href="Home.html" >Home</a></li>
-      <li><a href="Research.html">Research</a></li> 
-      <li><a href="Members.html">Members</a></li>
+          <li>
+            <a href="Publications.html">Publications</a>
+          </li>
+          <li>
+            <a href="#" style="color:red;">Data&amp;Code</a>
+          </li>
+          <!--新开一个窗口显示登记信息-->
+          <li>
+            <a href="News.html">News</a>
+          </li>
+          <li>
+            <a href="Collaborators.html">Collaborators</a>
+          </li>
+          <li>
+            <a href="Hesheng.html">DR. Hesheng</a>
+          </li>
+        </ul>
+      </div>
+      <!--end navigation-->
 
-      <li><a href="Publications.html">Publications</a></li>
-      <li><a href="#" style="color:red;">Data&amp;Code</a></li> <!--新开一个窗口显示登记信息-->
-      <li><a href="News.html">News</a></li>
-      <li><a href = "Collaborators.html">Collaborators</a></li>
-      <li><a href="Hesheng.html">DR. Hesheng</a></li>
-    </ul>
-  </div>  <!--end navigation-->
+    </div>
+    <!--end HeadTitle-->
+    <div id="content">
 
-</div> <!--end HeadTitle-->
+      <div id="BigTitle_div">
+        Data & Code
+        <hr style="border:1px solid #808080; height:0.1px" />
+      </div>
+
+      <!--两栏显示DownLoad-，左侧显示文章出处，右侧显示下载内容-->
+
+      <div id="Down_1" class="display_p_div">
+        <h3>2015</h3>
+        <hr style="border:1px solid #808080; height:0.1px" />
+        <div class="left_div">
+          <p>Wang D et al.2015:
+            <strong> Parcellating Cortical Functional Networks in Individuals</strong>. Nat. Neurosci. </p>
+        </div>
+        <!--结束左侧-->
+
+
+        <div class="right_div">
+          <ul>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2015_IndividualParcellation/IndiPar_v1.0_with_MCR_Package.zip')"> Matlab Code for Iterative Parcellation and User Manual </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2015_IndividualParcellation/HCP.tgz')"> Parcellation Results of HCP Unrelated 100 Subjects</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2015_IndividualParcellation/Maps.tgz')"> Snapshots of the Parcellation Maps</a>
+            </li>
+          </ul>
+        </div>
+        <!--结束右侧-->
+      </div>
+      <!--结束第一个下载-->
+
+
+      <div id="Down_2" class="display_p_div">
+        <h3>2014</h3>
+        <hr style="border:1px solid #808080; height:0.1px" />
+        <div class="left_div">
+          <p>Wang D et al.2014:
+            <strong> Functional Specialization in the Human Brain Estimated By Intrinsic Hemispheric Interaction</strong>. The Journal
+            of Neuroscience. </p>
+        </div>
+        <!--结束左侧-->
+
+
+        <div class="right_div">
+
+          <ul>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2014_Autonomy/Auto_v1.0_with_MCR_Package.tgz')"> Compiled Code for Autonomy Index</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2014_Autonomy/Autonomy_Uncompiled.tgz')"> UnCompiled Matlab Code for Autonomy Index</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/ExampleData/ExampleData_GSP100.tgz')"> ExampleData</a>
+            </li>
+          </ul>
+        </div>
+        <!--结束右侧-->
+      </div>
+      <!--结束第二个下载-->
 
 
 
-<div id="content">
+      <div id="Down_3" class="display_p_div">
+        <h3>2013</h3>
+        <hr style="border:1px solid #808080; height:0.1px" />
+        <div class="left_div">
+          <p>Wang D et al.2013:
+            <strong> Cerebellar asymmetry and its relation to cerebral asymmetry estimated by intrinsic functional connectivity</strong>.
+            J Neurophysiol. </p>
+        </div>
+        <!--结束左侧-->
 
-  <div id = "BigTitle_div" >
-    Data & Code
-    <hr style="border:1px solid ##808080; height:0.1px" />
+        <div class="right_div">
+          <ul>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2013_Lateralization/iLI_v1.0_with_MCR_Package.tgz')"> Compiled Code for Lateralization Index</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/2013_Lateralization/iLI_Uncompiled.tgz')"> UnCompiled Matlab Code for Lateralization Index</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" v-on:click="checkForDownload('DownLoad/ExampleData/ExampleData_GSP100.tgz')"> ExampleData</a>
+            </li>
+
+          </ul>
+        </div>
+        <!--结束右侧-->
+      </div>
+      <!--结束第三个下载-->
+    </div><!--结束左侧content即Mainbody内容-->
+    <el-dialog :visible.sync="visible" title="Personal Infomation" center>
+      <el-form :model="downloader" ref="downloader" :label-position="labelPosition" :rules="rules">
+          <el-form-item label="email" :label-width="formLabelWidth" prop="email">
+            <el-input v-model="downloader.email" auto-complete="on"></el-input>
+          </el-form-item>
+          <el-form-item label="institution" :label-width="formLabelWidth">
+              <el-input v-model="downloader.institution" auto-complete="on"></el-input>
+            </el-form-item>
+        </el-form>
+        <span slot="footer" class="dialog-footer">
+            <el-button @click="visible = false">cancel</el-button>
+            <el-button type="primary" @click="saveDownloader('downloader')">download</el-button>
+          </span>
+    </el-dialog>
+
   </div>
-
-<!--两栏显示DownLoad-，左侧显示文章出处，右侧显示下载内容-->
-
-<div id="Down_1" class="display_p_div" >
-<h3>2015</h3>
-<hr style="border:1px solid ##808080; height:0.1px" />
-  <div class = "left_div">
-  <p>Wang D et al.2015: <strong> Parcellating Cortical Functional Networks in Individuals</strong>. Nat. Neurosci. </p> 
-  </div><!--结束左侧-->
-  
-  
-  <div class = "right_div">
-  <ul>
-  <li><a href = "DownLoad/2015_IndividualParcellation/IndiPar_v1.0_with_MCR_Package.zip"> Matlab Code for Iterative Parcellation and User Manual</a></li>
-  <li><a href = "DownLoad/2015_IndividualParcellation/HCP.tgz"> Parcellation Results of HCP Unrelated 100 Subjects</a></li>
-  <li><a href = "DownLoad/2015_IndividualParcellation/Maps.tgz"> Snapshots of the Parcellation Maps</a></li>
-  </ul>
-  </div><!--结束右侧-->
-</div><!--结束第一个下载-->
-
-
-<div id="Down_2" class="display_p_div" >
-<h3>2014</h3>
-<hr style="border:1px solid ##808080; height:0.1px" />
-  <div class = "left_div">
-  <p>Wang D et al.2014: <strong> Functional Specialization in the Human Brain Estimated By Intrinsic Hemispheric Interaction</strong>. The Journal of Neuroscience. </p> 
-  </div><!--结束左侧-->
-  
-  
-  <div class = "right_div">
-  
-  <ul>
-  <li><a href = "DownLoad/2014_Autonomy/Auto_v1.0_with_MCR_Package.tgz"> Compiled Code for Autonomy Index</a></li>
-  <li><a href = "DownLoad/2014_Autonomy/Autonomy_Uncompiled.tgz"> UnCompiled Matlab Code for Autonomy Index</a></li>
-  <li><a href = "DownLoad/ExampleData/ExampleData_GSP100.tgz"> ExampleData</a></li>
-  </ul>
-  </div><!--结束右侧-->
-</div><!--结束第二个下载-->
-
-
-
-<div id="Down_3" class="display_p_div" >
-<h3>2013</h3>
-<hr style="border:1px solid ##808080; height:0.1px" />
-  <div class = "left_div">
-  <p>Wang D et al.2013: <strong> Cerebellar asymmetry and its relation to cerebral asymmetry estimated by intrinsic functional connectivity</strong>. J Neurophysiol. </p> 
-  </div><!--结束左侧-->
-  
-  <div class = "right_div">
-  <ul>
-  <li><a href = "DownLoad/2013_Lateralization/iLI_v1.0_with_MCR_Package.tgz"> Compiled Code for Lateralization Index</a></li>
-  <li><a href = "DownLoad/2013_Lateralization/iLI_Uncompiled.tgz"> UnCompiled Matlab Code for Lateralization Index</a></li>
-  <li><a href = "DownLoad/ExampleData/ExampleData_GSP100.tgz"> ExampleData</a></li>
-  
-  </ul>
-  </div><!--结束右侧-->
-</div><!--结束第三个下载-->
-
-
-</div>  <!--结束左侧content即Mainbody内容-->
 </body>
+
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        visible: false,
+        downloader: {
+          email: '',
+          institution: '',
+          datetime:{},
+        },
+        rules: {
+          email: [
+            { type: "email", required: true, message: 'Please enter a valid email address', trigger: 'blur' }
+          ],
+        },
+        formLabelWidth: '90px',
+        labelPosition:'top',
+        curDownUrl:''
+      },
+      
+      methods: {
+        checkForDownload: function(url) {
+          this.downloader.email = '';
+          this.downloader.institution = '';
+
+          if(!window.localStorage) {
+              console.log("浏览器不支持localStorage, 放弃缓存功能")
+              this.visible = true
+              return;
+          }
+          var down = localStorage.getItem("downloader");      
+          if(down !== null) {
+            down = JSON.parse(down);
+            var now = new Date();
+            var laste = new Date(down.datetime)
+            var minDiff = (now.getTime() - laste.getTime()) / 1000 / 60
+            console.log(minDiff)
+            if(minDiff < 30) {
+              console.log("30分钟内下载过，不用再登记")
+              window.location.href = url
+              return;
+            }
+          }
+
+          console.log("30分钟内没有下载过, 登记信息")
+          this.visible = true
+          this.curDownUrl = url
+        },
+        saveDownloader: function(formName) {
+          this.$refs[formName].validate((valid) => {
+            if (valid) {
+              // 存入localstorrage
+              this.downloader.datetime = new Date();
+              localStorage.setItem("downloader", JSON.stringify(this.downloader));
+              // 上传到云服务器
+              this.uploadDownloader();
+              // 关闭对话框
+              this.visible = false;
+              // 跳转到下载
+              window.location.href = this.curDownUrl;
+            } else {
+              console.log('表单校验失败');
+              return false;
+            }
+          });
+        },
+        uploadDownloader: function() {
+          console.log("上传...")
+        }
+      }
+    })
+</script>
+
+<style>
+</style>
+
 </html>
