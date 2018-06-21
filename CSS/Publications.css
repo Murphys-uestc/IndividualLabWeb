@@ -1,0 +1,54 @@
+.BigTitle_div {
+    opacity: 1;
+    font-family:Perpetua;
+    text-align:center;
+    font-size:2em;
+    Font-style:italic;
+    font-weight:bold;
+}
+.PubContent{ 
+	padding-top:10px;
+	font-family:Arial;
+
+}/*上右下左,顺时针*/
+
+
+.PubContent h1 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left:10px;
+	
+}
+
+.PubContent h2{
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left:10px;
+}
+
+.PubContent h2 a{
+	color:red;
+	text-decoration: NONE
+
+}
+
+
+.PubContent ol{
+	padding-left:40px;	
+}
+
+.PubContent ol li {
+	padding-top:10px;
+	font-size: 14px;
+	font-weight:normal;
+	line-height:1.5em;
+
+}
+
+.PubContent ol li a{
+	color:red;
+	text-decoration: NONE
+
+}

@@ -2,234 +2,223 @@
 <html lang="zh"><head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LiuLab|Research</title>
 
-<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/bootstrap.css">
 <link rel="stylesheet" href="CSS/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/Research.css">
 <link rel="stylesheet" type="text/css" href="CSS/Research_Template.css">
-<link rel="stylesheet" href="CSS/Frames_Template.css" type="text/css" />
 <link rel="stylesheet" href="CSS/DynamicImg.css" type="text/css">
-<script type="text/javascript" src="CSS/jquery.min.js"></script>
-<script type="text/javascript" src="CSS/NavigationBars.js"></script>
-<script type="text/javascript" src="CSS/DynamicImg.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/DynamicImg.js"></script>
 
-<style type="text/css">
-*{margin:0; padding:0}<!--初始化代码，使网页顶格显示-->
-body,td,th {
-	font-family: Verdana, Geneva, sans-serif;
-}
-</style>
 
 </head>
 
 <body>
 
-<div id = "HeadTitle">
-  <div id="Navigation">
-   <ul>
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="#" style="color:red;">Research</a></li> 
-      <li><a href="Members.html" >Members</a></li>
-      <li><a href="Publications.html">Publications</a></li>
-      <li><a href="DownLoad.html">Data&amp;Code</a></li> <!--新开一个窗口显示登记信息-->
-      <li><a href="News.html">News</a></li>
-      <li><a href = "Collaborators.html">Collaborators</a></li>
-      <li><a href="Hesheng.html">DR. Hesheng</a></li>
-    </ul>
-  </div>  <!--end navigation-->
-
-</div> <!--end HeadTitle-->
-
-
-
-
-
-<div id="content">
-
-<div id = "wrapImg"><!--包含动态显示图像，动态图像文字介绍以及动态焦点-->
-
-<!--在首页动态的显示图像-->
-
-<div id="DynamicImg">
-<ul>
- <li><a href="imags\PublicationImg\1.pdf" title="Download pdf"><img src="imags\PublicationImg\1.jpg"/></a></li>
- <li><a href="imags\PublicationImg\2.pdf" title="Download pdf"><img src="imags\PublicationImg\2.jpg"/></a></li>
- <li><a href="imags\PublicationImg\3.pdf" title="Download pdf"><img src="imags\PublicationImg\3.jpg"/></a></li>
- <li><a href="imags\PublicationImg\4.pdf" title="Download pdf"><img src="imags\PublicationImg\4.jpg"/></a></li>
- <li><a href="imags\PublicationImg\5.pdf" title="Download pdf"><img src="imags\PublicationImg\5.jpg"/></a></li>
- 
- 
-</ul>
-</div><!--结束动态显示图像-->
-
-
-<!--显示对应动态图像的文字介绍-->
- <div id = "imgtxt">
-	
-        <div id="slider_p0" class="slider_p_div">
-			
-			<p>"Parcellating cortical functional networks in individuals"</p>
-            <h3>Nat. Neurosci, 2015</h3>
+<div class="container">
+    <!--标题栏-->
+    <div class="row">
+        <div class="col-xs-12 HeadTitle">
+            <ul class="nav nav-pills Navigation">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#" style="color:red;">Research</a></li>
+                <li><a href="Members.html" >Members</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li><a href="DownLoad.html">Data&amp;Code</a></li> <!--新开一个窗口显示登记信息-->
+                <li><a href="News.html">News</a></li>
+                <li><a href = "Collaborators.html">Collaborators</a></li>
+                <li><a href="Hesheng.html">DR. Hesheng</a></li>
+            </ul>
         </div>
-		
-        <div id="slider_p1" class="slider_p_div">
-			<p>"Individual Variability in Functional Connectivity Architecture of the Human Brain"</p>
-            <h3>Neuron, 2013</h3>
+    </div><!--结束标题栏-->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div id = "wrapImg"><!--包含动态显示图像，动态图像文字介绍以及动态焦点-->
+
+                <!--在首页动态的显示图像-->
+
+                <div id="DynamicImg">
+                    <ul>
+                        <li><a href="imags\PublicationImg\1.pdf" title="Download pdf"><img src="imags\PublicationImg\1.jpg"/></a></li>
+                        <li><a href="imags\PublicationImg\2.pdf" title="Download pdf"><img src="imags\PublicationImg\2.jpg"/></a></li>
+                        <li><a href="imags\PublicationImg\3.pdf" title="Download pdf"><img src="imags\PublicationImg\3.jpg"/></a></li>
+                        <li><a href="imags\PublicationImg\4.pdf" title="Download pdf"><img src="imags\PublicationImg\4.jpg"/></a></li>
+                        <li><a href="imags\PublicationImg\5.pdf" title="Download pdf"><img src="imags\PublicationImg\5.jpg"/></a></li>
+
+
+                    </ul>
+                </div><!--结束动态显示图像-->
+
+
+                <!--显示对应动态图像的文字介绍-->
+                <div id = "imgtxt">
+
+                    <div id="slider_p0" class="slider_p_div">
+
+                        <p>"Parcellating cortical functional networks in individuals"</p>
+                        <h3>Nat. Neurosci, 2015</h3>
+                    </div>
+
+                    <div id="slider_p1" class="slider_p_div">
+                        <p>"Individual Variability in Functional Connectivity Architecture of the Human Brain"</p>
+                        <h3>Neuron, 2013</h3>
+                    </div>
+
+                    <div id="slider_p2" class="slider_p_div">
+
+                        <p>"Cerebellar asymmetry and its relation to cerebral asymmetry estimated by intrinsic functional connectivity"</p>
+                        <h3>J Neurophysiol, 2012</h3>
+
+                    </div>
+
+                    <div id="slider_p3" class="slider_p_div">
+
+                        <p>"Neurobiological basis of head motion in brain imaging"</p>
+                        <h3>PNAS, 2014</h3>
+                    </div>
+
+                    <div id="slider_p4" class="slider_p_div">
+
+                        <p>"Functional Connectivity Architecture of the Human Brain: Not All the Same"</p>
+                        <h3>The Neuroscientist, 2014</h3>
+                    </div>
+
+                </div>
+                <!--结束图像文字介绍-->
+
+
+
+                <!--显示焦点-->
+                <div class="jiaodiandiv">
+                    <ul>
+                        <li id="selectli"><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
+                    </ul>
+                </div><!--结束焦点显示-->
+
+
+                <div class="slideshortcut">
+                    <a id="SlidePrev" class="prev"><img src="imags/WebImg/large_left.png" width="40px" /></a>
+                    <a id="SlideNext" class="next"><img src="imags/WebImg/large_right.png" width = "40px"/></a>
+                </div>
+
+
+            </div> <!--结束wrapImg-->
         </div>
-		
-        <div id="slider_p2" class="slider_p_div">
-			
-			<p>"Cerebellar asymmetry and its relation to cerebral asymmetry estimated by intrinsic functional connectivity"</p>
-            <h3>J Neurophysiol, 2012</h3>
-            
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="BigTitle_div">Research Theme</div>
+            <hr style="border:1px solid #808080; height:0.1px" />
         </div>
-		
-        <div id="slider_p3" class="slider_p_div">
-		
-			<p>"Neurobiological basis of head motion in brain imaging"</p>
-            <h3>PNAS, 2014</h3>
-         </div> 
-          
-         <div id="slider_p4" class="slider_p_div">
-  
-          <p>"Functional Connectivity Architecture of the Human Brain: Not All the Same"</p>
-          <h3>The Neuroscientist, 2014</h3>
-        </div> 
-            
-            </div>
-            <!--结束图像文字介绍-->
+    </div>
 
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-
-<!--显示焦点-->
-<div class="jiaodiandiv">
-<ul>
-   <li id="selectli"><span></span></li>
-   <li><span></span></li>
-   <li><span></span></li>
-   <li><span></span></li>
-   <li><span></span></li>
-</ul>
-</div><!--结束焦点显示-->
-
-
-<div class="slideshortcut">
-     <a id="SlidePrev" class="prev"><img src="imags/WebImg/large_left.png" width="40px" /></a>
-     <a id="SlideNext" class="next"><img src="imags/WebImg/large_right.png" width = "40px"/></a>
-</div>
-
-
-</div> <!--结束wrapImg-->
-
-
- 
-  
-<div id = "BigTitle_div" >
-Research Theme
-<hr style="border:1px solid ##808080; height:0.1px" />
-</div>
-
-
-
-			<div class="col-md-offset-3 col-md-6">
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                
                 <!--介绍第一个研究方向-->
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h4 class="panel-title">
-								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									Functional mapping at the single-subject level
-								</a>
-							</h4>
-						</div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Functional mapping at the single-subject level
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
-								<p>No two individuals are alike, however, the extent to which brain networks can differ between people is often underestimated in many clinical practices. We systematically investigated the inter-individual variability in functional organization, and found that it is the higher cognitive regions that are most variable between subjects. These areas are known to be activated when the brain performs complex tasks, and when we feel emotions. Besides providing better knowledge of how our brain works, this research has clinical importance, since knowing the individual variability in functional organization is crucial for the development of customized therapeutic approaches. When interventions (surgery, brain stimulation) are provided in areas of high variability, doctors could perform specific tests to check the relevance of standardized procedures. Building upon these findings, we recently developed a novel technology that can accurately map the unique functional network organization in each individual subject.  This will benefit patients suffering from neurological and psychiatric diseases by providing critical information to determine the optimal treatment strategy for each individual, and to gain a deep understanding of the therapeutic effect in a particular patient.
-                                <li>Mueller S., Wang D., Fox M.D., Yeo B.T.T., Sepulcre J., Sabuncu M.R., Shafee R., Lu J., Liu H., “Individual variability in functional connectivity architecture of the human brain”, Neuron, 77(3): 586-595, 2013 </li>
-                                <li>Zeng L.L., Wang D., Fox M.D., Sabuncu M., Hu D., Ge M., Buckner R.L., Liu H., “Neurobiological basis of head motion in brain imaging”. Proc Natl Acad Sci U S A. 111(16):6058-62, 2014</li>
-                                <li>Langs G., Wang D., Golland P., Mueller S., Pan R., Sabuncu M., Sun W., Li K., Liu H., “Decoupling functional and anatomical variability for brain parcellation in individual subjects based on connectivity”. Cereb Cortex.  Bhv189, 2015</li>
-                                <li>Wang D, Buckner RL, Fox MD, Holt DJ, Holmes AJ, Mueller S, Langs G, Pan R, Qian T, Li K, Baker J, Stufflebeam SM, Wang K, Wang X, Hong B, Liu H. “Parcellating Cortical Functional Networks in Individuals”. Nat Neurosci 18:1853–1860, 2015</li>
-                                </p>
-							</div>
+                            <p>No two individuals are alike, however, the extent to which brain networks can differ between people is often underestimated in many clinical practices. We systematically investigated the inter-individual variability in functional organization, and found that it is the higher cognitive regions that are most variable between subjects. These areas are known to be activated when the brain performs complex tasks, and when we feel emotions. Besides providing better knowledge of how our brain works, this research has clinical importance, since knowing the individual variability in functional organization is crucial for the development of customized therapeutic approaches. When interventions (surgery, brain stimulation) are provided in areas of high variability, doctors could perform specific tests to check the relevance of standardized procedures. Building upon these findings, we recently developed a novel technology that can accurately map the unique functional network organization in each individual subject.  This will benefit patients suffering from neurological and psychiatric diseases by providing critical information to determine the optimal treatment strategy for each individual, and to gain a deep understanding of the therapeutic effect in a particular patient.
+                            <li>Mueller S., Wang D., Fox M.D., Yeo B.T.T., Sepulcre J., Sabuncu M.R., Shafee R., Lu J., Liu H., “Individual variability in functional connectivity architecture of the human brain”, Neuron, 77(3): 586-595, 2013 </li>
+                            <li>Zeng L.L., Wang D., Fox M.D., Sabuncu M., Hu D., Ge M., Buckner R.L., Liu H., “Neurobiological basis of head motion in brain imaging”. Proc Natl Acad Sci U S A. 111(16):6058-62, 2014</li>
+                            <li>Langs G., Wang D., Golland P., Mueller S., Pan R., Sabuncu M., Sun W., Li K., Liu H., “Decoupling functional and anatomical variability for brain parcellation in individual subjects based on connectivity”. Cereb Cortex.  Bhv189, 2015</li>
+                            <li>Wang D, Buckner RL, Fox MD, Holt DJ, Holmes AJ, Mueller S, Langs G, Pan R, Qian T, Li K, Baker J, Stufflebeam SM, Wang K, Wang X, Hong B, Liu H. “Parcellating Cortical Functional Networks in Individuals”. Nat Neurosci 18:1853–1860, 2015</li>
+                            </p>
                         </div>
-					</div>
-                    
-                     <!--介绍第二个研究方向-->
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwo">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Study of brain lateralization using functional connectivity MRI 
-								</a>
-							</h4>
-						</div>
-						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-							<div class="panel-body">
-								<p>It is well established that the human brain possesses a number of systems that are specialized between the two hemispheres.  Past theories of lateralization have assumed a single factor that controls brain lateralization. The upshot has been a 40-year quest for an explanatory factor that controls the development of brain asymmetries. Recently, we developed a general data-driven approach to map the specialization of brain systems. Our study suggested that the single-factor models are incomplete and replaced them with a new multiple-factor model based on strong evidence that different mechanisms control lateralization for distinct brain systems. Further, we found a gradient of specialization across different functional regions and discovered that one specific association network, called the frontoparietal network, possesses a unique pattern that may suggest how specialization may emerge in the human brain. What we discovered is that the frontoparietal network is differentially coupled to distinct systems in each hemisphere. Thus, differentiation between the hemispheres may arise by how networks interact with distinct partner networks in each of the hemispheres. This discovery and the novel approach developed during the study were then immediately translated to clinical research. In a group of patients with schizophrenia, we found aberrant hemispheric specialization in the caudate nucleus that may relate to the development of illness.
-                                <li>Liu H., Stufflebeam S.M., Sepulcre J., Hedden T., Buckner R.L., “Evidence from Intrinsic Activity that Asymmetry of the Human Brain is Controlled by Multiple Factors”, Proc. Natl. Acad. Sci. USA, 106: 20499-20503, 2009</li>
-                                <li>Wang D., Buckner R.L., Liu H., “Cerebellar asymmetry and its relation to cerebral asymmetry estimated by intrinsic functional connectivity”, J Neurophysiol.  109(1): 49-57, 2013</li>
-                                <li>Wang D., Buckner R.L., Liu H., “Functional Specialization in the Human Brain Estimated By Intrinsic Hemispheric Interaction”. J Neurosci. 34 (37):12341-12352, 2014</li>
-                                <li>Mueller S., Wang D., Pan R., Holt D., Liu H., “Abnormalities in hemispheric specialization of caudate nucleus connectivity in schizophrenia”. JAMA Psychiatry. 72(6):552-560, 2015</li>
-                                </p>
-                                
-							</div>
-						</div>
-					</div>
-                    
-                    
-                    <!--介绍第三个研究方向-->
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Clinical applications of functional connectivity MRI 
-								</a>
-							</h4>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-							<div class="panel-body">
-								<p>We have been refining and validating the functional connectivity MRI technology in clinical populations. In 2009, we first demonstrated the feasibility of mapping functional networks in epilepsy surgical candidates based on functional connectivity. Our recent work showed that spontaneous and task-based mapping can be performed together using the same pre-operative fMRI data, provide complimentary information relevant for functional localization, and can be combined to improve identification of eloquent cortex in epilepsy surgical candidates. Additionally, we have been validating functional connectivity MRI technology in patients with brain lesions and demonstrated that functional connectivity MRI is very sensitive to the integrity of specific functional circuits.
-                                <li>Liu, H., Buckner, R.L., Talukdar, T., Tanaka, N., Madsen, J.R., and Stufflebeam, S.M. “Task-Free Presurgical Mapping Using fMRI Intrinsic Activity”.  J. Neurosurg. 111: 746-754, 2009</li>
-                                <li>Lu, J.*, Liu, H.*, Zhang, M., Wang, D., Cao, Y., Ma, Q., Rong, D., Wang, X., Buckner, R.L., and Li, K. “Focal pontine lesions provide evidence that intrinsic functional connectivity reflects polysynaptic anatomical pathways. J. Neurosci. 31:15065–15071, 2011</li>
-                                <li>Mueller S, Wang D, Fox MD, Pan R, Lu J, Li K, Sun W, Buckner RL, Liu H. “Reliability Correction for Functional Connectivity: Theory and Implementation”. Hum. Brain Mapp. 36 (11): 4664-4680, 2015</li>
-                                <li>Fox MD, Qian T, Madsen JR, Wang D, Li M, Ge M, Zuo H, Groppe DM, Mehta AD, Hong B, Liu H. “Combining task-evoked and spontaneous activity to improve pre-operative brain mapping with fMRI”. Neuroimage, 124:714-723, 2015 </li>
+                    </div>
+                </div>
 
-                                 </p>
-							</div>
-						</div>
-					</div>
-                    
-                    <!--介绍第四个研究方向-->
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingFour">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									Neurophysiological signal processing
-								</a>
-							</h4>
-						</div>
-						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-							<div class="panel-body">
-								<p>An important direction in clinical neurophysiology research is to estimate the neural sources that give rise to the electrical activity (EEG) as well as the magnetic fields (MEG) measured on scalp. We developed a series of new algorithms to determine the locations and time courses of neural activity within the brain under various disease conditions. These algorithms are used in many hospitals to assist daily diagnosis. We also designed novel signal processing method to analyze intracranial EEG recorded from surgical patients and studied the spatiotemporal procedure of object recognition in human visual cortex.
-                                <li>Liu H., Gao X., Schimpf P., Yang F., Gao S., “A recursive algorithm for the 3-dimensional imaging of brain electric activity: Shrinking LORETA-FOCUSS”, IEEE trans Biomed Eng 51(10): 1794-1802, 2004</li>
-                                <li>Liu H., Schimpf P., Dong G., Gao X., Yang F., Gao S., “Standardized Shrinking LORETA-FOCUSS (SSLOFO): a new algorithm for spatio-temporal EEG source reconstruction”, IEEE trans Biomed Eng, 52(10): 1681-1691, 2005</li>
-                                <li>Liu H., Schimpf P., “Efficient localization of synchronous EEG source activities using a modified RAP-MUSIC algorithm”, IEEE trans Biomed Eng, 53(4): 652-661, 2006</li>
-                                <li>Liu. H., Agam Y., Madsen J.R., Kreiman G., “Timing, timing, timing: fast decoding of object information from intracranial field potentials in human visual cortex”, Neuron, 62: 281-290, 2009</li>
-                                
-                                 </p>
-							</div> <!-- end class="panel-body"-->
-						</div>
-					</div> <!--完成第四个研究方向的介绍-->
-				</div>
-			</div>
-            
-<script src="CSS/jquery.min.js" type="text/javascript"></script>
-<script src="CSS/bootstrap.min.js"></script>
+                <!--介绍第二个研究方向-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Study of brain lateralization using functional connectivity MRI
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <p>It is well established that the human brain possesses a number of systems that are specialized between the two hemispheres.  Past theories of lateralization have assumed a single factor that controls brain lateralization. The upshot has been a 40-year quest for an explanatory factor that controls the development of brain asymmetries. Recently, we developed a general data-driven approach to map the specialization of brain systems. Our study suggested that the single-factor models are incomplete and replaced them with a new multiple-factor model based on strong evidence that different mechanisms control lateralization for distinct brain systems. Further, we found a gradient of specialization across different functional regions and discovered that one specific association network, called the frontoparietal network, possesses a unique pattern that may suggest how specialization may emerge in the human brain. What we discovered is that the frontoparietal network is differentially coupled to distinct systems in each hemisphere. Thus, differentiation between the hemispheres may arise by how networks interact with distinct partner networks in each of the hemispheres. This discovery and the novel approach developed during the study were then immediately translated to clinical research. In a group of patients with schizophrenia, we found aberrant hemispheric specialization in the caudate nucleus that may relate to the development of illness.
+                            <li>Liu H., Stufflebeam S.M., Sepulcre J., Hedden T., Buckner R.L., “Evidence from Intrinsic Activity that Asymmetry of the Human Brain is Controlled by Multiple Factors”, Proc. Natl. Acad. Sci. USA, 106: 20499-20503, 2009</li>
+                            <li>Wang D., Buckner R.L., Liu H., “Cerebellar asymmetry and its relation to cerebral asymmetry estimated by intrinsic functional connectivity”, J Neurophysiol.  109(1): 49-57, 2013</li>
+                            <li>Wang D., Buckner R.L., Liu H., “Functional Specialization in the Human Brain Estimated By Intrinsic Hemispheric Interaction”. J Neurosci. 34 (37):12341-12352, 2014</li>
+                            <li>Mueller S., Wang D., Pan R., Holt D., Liu H., “Abnormalities in hemispheric specialization of caudate nucleus connectivity in schizophrenia”. JAMA Psychiatry. 72(6):552-560, 2015</li>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--介绍第三个研究方向-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Clinical applications of functional connectivity MRI
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <p>We have been refining and validating the functional connectivity MRI technology in clinical populations. In 2009, we first demonstrated the feasibility of mapping functional networks in epilepsy surgical candidates based on functional connectivity. Our recent work showed that spontaneous and task-based mapping can be performed together using the same pre-operative fMRI data, provide complimentary information relevant for functional localization, and can be combined to improve identification of eloquent cortex in epilepsy surgical candidates. Additionally, we have been validating functional connectivity MRI technology in patients with brain lesions and demonstrated that functional connectivity MRI is very sensitive to the integrity of specific functional circuits.
+                            <li>Liu, H., Buckner, R.L., Talukdar, T., Tanaka, N., Madsen, J.R., and Stufflebeam, S.M. “Task-Free Presurgical Mapping Using fMRI Intrinsic Activity”.  J. Neurosurg. 111: 746-754, 2009</li>
+                            <li>Lu, J.*, Liu, H.*, Zhang, M., Wang, D., Cao, Y., Ma, Q., Rong, D., Wang, X., Buckner, R.L., and Li, K. “Focal pontine lesions provide evidence that intrinsic functional connectivity reflects polysynaptic anatomical pathways. J. Neurosci. 31:15065–15071, 2011</li>
+                            <li>Mueller S, Wang D, Fox MD, Pan R, Lu J, Li K, Sun W, Buckner RL, Liu H. “Reliability Correction for Functional Connectivity: Theory and Implementation”. Hum. Brain Mapp. 36 (11): 4664-4680, 2015</li>
+                            <li>Fox MD, Qian T, Madsen JR, Wang D, Li M, Ge M, Zuo H, Groppe DM, Mehta AD, Hong B, Liu H. “Combining task-evoked and spontaneous activity to improve pre-operative brain mapping with fMRI”. Neuroimage, 124:714-723, 2015 </li>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--介绍第四个研究方向-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Neurophysiological signal processing
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <p>An important direction in clinical neurophysiology research is to estimate the neural sources that give rise to the electrical activity (EEG) as well as the magnetic fields (MEG) measured on scalp. We developed a series of new algorithms to determine the locations and time courses of neural activity within the brain under various disease conditions. These algorithms are used in many hospitals to assist daily diagnosis. We also designed novel signal processing method to analyze intracranial EEG recorded from surgical patients and studied the spatiotemporal procedure of object recognition in human visual cortex.
+                            <li>Liu H., Gao X., Schimpf P., Yang F., Gao S., “A recursive algorithm for the 3-dimensional imaging of brain electric activity: Shrinking LORETA-FOCUSS”, IEEE trans Biomed Eng 51(10): 1794-1802, 2004</li>
+                            <li>Liu H., Schimpf P., Dong G., Gao X., Yang F., Gao S., “Standardized Shrinking LORETA-FOCUSS (SSLOFO): a new algorithm for spatio-temporal EEG source reconstruction”, IEEE trans Biomed Eng, 52(10): 1681-1691, 2005</li>
+                            <li>Liu H., Schimpf P., “Efficient localization of synchronous EEG source activities using a modified RAP-MUSIC algorithm”, IEEE trans Biomed Eng, 53(4): 652-661, 2006</li>
+                            <li>Liu. H., Agam Y., Madsen J.R., Kreiman G., “Timing, timing, timing: fast decoding of object information from intracranial field potentials in human visual cortex”, Neuron, 62: 281-290, 2009</li>
+
+                            </p>
+                        </div> <!-- end class="panel-body"-->
+                    </div>
+                </div> <!--完成第四个研究方向的介绍-->
+            </div>
+        </div>
+    </div>
 </div>
 
 
-</div>  <!--end Content-->
+
 </body>
 </html>
