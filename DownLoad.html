@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>LiuLab|Download</title>
@@ -10,11 +11,20 @@
 
 <script type="text/javascript" src="CSS/jquery.min.js"></script>
 
+<!-- Vue安装 -->
+<script type="text/javascript" src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<!-- ElementUI安装 -->
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+<script type="text/javascript" src="js/initLeanCloud.js"></script>
+
 </head>
-
-<body>
-
-    <div class="container">
+    <div class="container" id="app">
       <!--标题栏-->
         <div class="row">
             <div class="col-xs-12 HeadTitle">
@@ -50,9 +60,9 @@
             </div>
             <div class="col-xs-6">
                 <ul>
-                    <li><a href = "DownLoad/2015_IndividualParcellation/IndiPar_v1.0_with_MCR_Package.zip"> Matlab Code for Iterative Parcellation and User Manual</a></li>
-                    <li><a href = "DownLoad/2015_IndividualParcellation/HCP.tgz"> Parcellation Results of HCP Unrelated 100 Subjects</a></li>
-                    <li><a href = "DownLoad/2015_IndividualParcellation/Maps.tgz"> Snapshots of the Parcellation Maps</a></li>
+                    <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2015_IndividualParcellation/IndiPar_v1.0_with_MCR_Package.zip')"> Matlab Code for Iterative Parcellation and User Manual</a></li>
+                    <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2015_IndividualParcellation/HCP.tgz')"> Parcellation Results of HCP Unrelated 100 Subjects</a></li>
+                    <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2015_IndividualParcellation/Maps.tgz')"> Snapshots of the Parcellation Maps</a></li>
                 </ul>
             </div>
           </div>
@@ -68,9 +78,9 @@
               </div>
               <div class="col-xs-6">
                   <ul>
-                      <li><a href = "DownLoad/2014_Autonomy/Auto_v1.0_with_MCR_Package.tgz"> Compiled Code for Autonomy Index</a></li>
-                      <li><a href = "DownLoad/2014_Autonomy/Autonomy_Uncompiled.tgz"> UnCompiled Matlab Code for Autonomy Index</a></li>
-                      <li><a href = "DownLoad/ExampleData/ExampleData_GSP100.tgz"> ExampleData</a></li>
+                      <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2014_Autonomy/Auto_v1.0_with_MCR_Package.tgz')"> Compiled Code for Autonomy Index</a></li>
+                      <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2014_Autonomy/Autonomy_Uncompiled.tgz')"> UnCompiled Matlab Code for Autonomy Index</a></li>
+                      <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/ExampleData/ExampleData_GSP100.tgz')"> ExampleData</a></li>
                   </ul>
               </div>
           </div>
@@ -86,9 +96,9 @@
               </div>
               <div class="col-xs-6">
                   <ul>
-                      <li><a href = "DownLoad/2013_Lateralization/iLI_v1.0_with_MCR_Package.tgz"> Compiled Code for Lateralization Index</a></li>
-                      <li><a href = "DownLoad/2013_Lateralization/iLI_Uncompiled.tgz"> UnCompiled Matlab Code for Lateralization Index</a></li>
-                      <li><a href = "DownLoad/ExampleData/ExampleData_GSP100.tgz"> ExampleData</a></li>
+                      <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2013_Lateralization/iLI_v1.0_with_MCR_Package.tgz')"> Compiled Code for Lateralization Index</a></li>
+                      <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/2013_Lateralization/iLI_Uncompiled.tgz')"> UnCompiled Matlab Code for Lateralization Index</a></li>
+                      <li><a href="javascript:void(0);" v-on:click = "checkForDownload('DownLoad/ExampleData/ExampleData_GSP100.tgz')"> ExampleData</a></li>
                   </ul>
               </div>
           </div>
@@ -102,6 +112,111 @@
                 </div>
             </div>
         </div> <!--结束版权-->
+        <el-dialog :visible.sync="visible" title="Personal Infomation" center>
+            <el-form :model="downloader" ref="downloader" :label-position="labelPosition" :rules="rules">
+                <el-form-item label="email" :label-width="formLabelWidth" prop="email">
+                  <el-input v-model="downloader.email" auto-complete="on"></el-input>
+                </el-form-item>
+                <el-form-item label="institution" :label-width="formLabelWidth">
+                    <el-input v-model="downloader.institution" auto-complete="on"></el-input>
+                  </el-form-item>
+              </el-form>
+              <span slot="footer" class="dialog-footer">
+                  <el-button @click="visible = false">cancel</el-button>
+                  <el-button type="primary" @click="saveDownloader('downloader')">download</el-button>
+                </span>
+          </el-dialog>
     </div>
 </body>
+
+<script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        visible: false,
+        downloader: {
+          email: '',
+          institution: '',
+          datetime:{},
+        },
+        rules: {
+          email: [
+            { type: "email", required: true, message: 'Please enter a valid email address', trigger: 'blur' }
+          ],
+        },
+        formLabelWidth: '90px',
+        labelPosition:'top',
+        curDownUrl:''
+      },
+      
+      methods: {
+        checkForDownload: function(url) {
+          this.downloader.email = '';
+          this.downloader.institution = '';
+
+          if(!window.localStorage) {
+              console.log("浏览器不支持localStorage, 放弃缓存功能")
+              this.visible = true
+              return;
+          }
+          var down = localStorage.getItem("downloader");      
+          if(down !== null) {
+            down = JSON.parse(down);
+            var now = new Date();
+            var laste = new Date(down.datetime)
+            var minDiff = (now.getTime() - laste.getTime()) / 1000 / 60
+            console.log(minDiff)
+            if(minDiff < 30) {
+              console.log("30分钟内下载过，不用再登记")
+              window.location.href = url
+              return;
+            }
+          }
+
+          console.log("30分钟内没有下载过, 登记信息")
+          this.visible = true
+          this.curDownUrl = url
+        },
+        saveDownloader: function(formName) {
+          this.$refs[formName].validate((valid) => {
+            if (valid) {
+              // 存入localstorrage
+              this.downloader.datetime = new Date();
+              localStorage.setItem("downloader", JSON.stringify(this.downloader));
+              // 上传到云服务器
+              this.uploadDownloader();
+              // 关闭对话框
+              this.visible = false;
+              // 跳转到下载
+              window.location.href = this.curDownUrl;
+            } else {
+              console.log('表单校验失败');
+              return false;
+            }
+          });
+        },
+        uploadDownloader: function() {
+            console.log("upload...");
+            var Visit = AV.Object.extend('Visit');
+            var email = this.downloader.email;
+            var institution = this.downloader.institution;
+            // LeanCloud - 对象
+            // https://leancloud.cn/docs/leanstorage_guide-js.html#数据类型
+            var visit = new Visit();
+            visit.set('email', email);
+            visit.set('institution', institution);
+            visit.save().then(function() {
+                console.log("success...");
+            }, function(error) {
+                alert(JSON.stringify(error));
+            });
+
+        }
+      }
+    })
+</script>
+
+<style>
+</style>
+
 </html>
