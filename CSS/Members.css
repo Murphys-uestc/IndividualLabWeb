@@ -1,0 +1,15 @@
+.BigTitle_div {
+    opacity: 1;
+    font-family:Perpetua;
+    text-align:center;
+    font-size:2em;
+    Font-style:italic;
+    font-weight:bold;
+}
+.Subtitle{
+    font-family:Perpetua;
+    font-size:24px;
+    font-weight:bold;
+    Font-style:italic;
+    line-height:2em;
+}

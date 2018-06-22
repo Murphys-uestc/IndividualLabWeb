@@ -1,170 +1,179 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!--viewport是网页默认的宽度和高度，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100% -->
 
-<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css" />
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="stylesheet" type="text/css" href="CSS/Home.css">
 
-<link rel="stylesheet" href="CSS/Home_Template.css" type="text/css">
-<link rel="stylesheet" href="CSS/Frames_Template.css" type="text/css">
-
-
-<script type="text/javascript" src="CSS/NavigationBars.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/rev-setting-1.js"></script>
 <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script async src="js/busuanzi.pure.mini.js"></script>
-<style type="text/css">
-*{margin:0; padding:0}<!--初始化代码，使网页顶格显示-->
 
-body,td,th {
-	font-family: Verdana, Geneva, sans-serif;
-}
-</style>
 </head>
 <body>
 
+<div class="container">
+    <!--标题栏-->
+    <div class="row">
+        <div class="col-xs-12 HeadTitle">
+            <ul class="nav nav-pills Navigation">
+                <li style="color: red"><span  id="busuanzi_container_site_uv">本站总访客数：<span id="busuanzi_value_site_uv"></span></span></li>
+                <li><a href="#" style="color:red;">Home</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Members.html">Members</a></li>
 
-<!--标题栏-->
-<div id = "HeadTitle">
-  <div id="Navigation">
-    <ul>
-      <li style="color:red;">visits&nbsp;<span id="busuanzi_value_site_uv"></span>&nbsp;views&nbsp;<span id="busuanzi_value_site_pv"></span></li>
-      <li><a href="#" style="color:red;">Home</a></li>
-      <li><a href="Research.html">Research</a></li>
-      <li><a href="Members.html">Members</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li><a href="DownLoad.html">Data&amp;Code</a></li>
+                <!--新开一个窗口显示登记信息-->
+                <li><a href="News.html">News</a></li>
+                <li><a href = "Collaborators.html">Collaborators</a></li>
+                <li><a href="Hesheng.html">DR. Hesheng</a></li>
+            </ul>
+        </div>
+    </div><!--结束标题栏-->
 
-      <li><a href="Publications.html">Publications</a></li>
-      <li><a href="DownLoad.html">Data&amp;Code</a></li>
-      <!--新开一个窗口显示登记信息-->
-      <li><a href="News.html">News</a></li>
-       <li><a href = "Collaborators.html">Collaborators</a></li>
-      <li><a href="Hesheng.html">DR. Hesheng</a></li>
-    </ul>
-  </div><!--end navigation-->
-</div> <!--end HeadTitle-->
+    <!--主体-->
+    <!--左侧添加logo,中间为welcome图像以及文字，右侧为图像导航-->
+    <div class="row" style="margin-top: 30px">
+        <!--在左侧添加Logo的导航-->
+        <div class="col-xs-2">
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 leftLogo">
+                    <a href="http://www.harvard.edu/"><img src="imags\WebImg\logo1.jpg"></a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 leftLogo">
+                    <a href="http://www.massgeneral.org/"><img src="imags\WebImg\logo2.jpg"></a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 leftLogo">
+                    <a href="https://www.nmr.mgh.harvard.edu/"><img src="imags\WebImg\logo3.jpg"></a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 leftLogo">
+                    <a href="http://hms.harvard.edu/"><img src="imags\WebImg\logo4.jpg"></a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+        </div><!--结束左侧Logo-->
+
+        <!--中间为welcome图像以及文字-->
+        <div class="col-xs-8 middle">
+            <img src="imags/WebImg/LabImg.jpg">
+            <ul>
+                <li id = "Welcomediag" data-transition="fade">
+                    <div>
+                        <hr style="border:2px solid #fff;"/>
+                        <h1>  Welcome to Liu Lab</h1>
+                        <hr style="border:2px solid #fff;"/>
+                        <h2>Laboratory For the Study of the Brain Basis of Individual Differences</h2>
+                    </div>
+                </li>
+            </ul>
+        </div><!--结束中间栏-->
+
+        <!--右侧为图像导航-->
+        <div class="col-xs-2">
+            <!--第一栏图标, Research, Publications-->
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 rightLogo">
+                    <a href="Research.html">
+                        <div class="box" >
+                            <div class="box-img">
+                                <img src="imags\WebImg\Research_logo.jpg">
+                            </div>
+                            <div class="box-content">
+                                <h4 class="title">Research</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
 
 
-<!--左侧添加logo,中间为welcome图像以及文字，右侧为图像导航-->
+            <!--第二栏图标：Publications-->
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 rightLogo">
+                    <a href="Publications.html">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imags\WebImg\Publication_logo.jpg">
+                            </div>
+                            <div class="box-content">
+                                <h4 class="title">Publications</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
 
-<!--在左侧添加Logo的导航-->
-<div id = "content">
-  <div id = "content_left">
-    <div>  
-     <a href="http://www.harvard.edu/"><img src="imags\WebImg\logo1.jpg" style="margin-top:0em;"</a>
-    </div>
-    <div>  
-     <a href="http://www.massgeneral.org/"><img src="imags\WebImg\logo2.jpg" style="margin-top:2em;"></a>
-    </div>   
-    
-     <div>  
-     <a href="https://www.nmr.mgh.harvard.edu/"><img src="imags\WebImg\logo3.jpg" style="margin-top:2em;"></a>
-    </div>  
-    
-    <div>  
-     <a href="http://hms.harvard.edu/"><img src="imags\WebImg\logo4.jpg" style="margin-top:2em;"></a>
-    </div>  
-        
-  </div><!--结束左侧Logo-->
- 
-<!--中间为welcome图像以及文字-->
-<div id = "content_middle">
 
-<img src="imags/WebImg/LabImg.jpg" height="100%" width="100%" > 
-  
-  <div id="revolution-slider">
-    <ul>	
-      <li id = "Welcomediag" data-transition="fade">
-          <div class="caption large_text sfb"
-              data-x="150"
-              data-y="60" 
-              data-speed="300"
-              data-start="800"
-              data-easing="easeOutExpo">
-              <hr style="border:2px solid #fff;"/>
-              <h1>  Welcome to Liu Lab</h1>
-              <hr style="border:2px solid #fff;"/>
-              <h2>Laboratory For the Study of the Brain Basis of Individual Differences</h2>  
-      
-          </div>
-      </li>
-    </ul>
-  </div>
-</div><!--结束中间栏-->
+            <!--第三栏图标,DataCode, Members-->
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 rightLogo">
+                    <a href="DownLoad.html">
+                        <div class="box" >
+                            <div class="box-img">
+                                <img src="imags\WebImg\DataCode_logo.jpg" >
+                            </div>
+                            <div class="box-content">
+                                <h4 class="title">Data&amp;Code</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
 
-<div id = "content_right">
-  
-  <!--第一栏图标, Research, Publications--> 
-<a href="Research.html">
-  <div class="col-md-4 col-sm-12"> 
-      <div class="box" >
-          <div class="box-img">
-           
-              <img src="imags\WebImg\Research_logo.jpg" >
-          </div>
-          <div class="box-content">
-              <h4 class="title">Research</h4>
-          </div>
-      </div> <!--END BOX-->
-  </div>
-</a>
-          
-  <!--Publications-->	
-<a href="Publications.html"> 
-  <div class="col-md-4 col-sm-12">
-      <div class="box">
-          <div class="box-img">
-        
-              <img src="imags\WebImg\Publication_logo.jpg">
-          </div>
-          <div class="box-content">
-              <h4 class="title">Publications</h4>
-          </div>
-      </div> <!--END BOX-->
-  </div>
-</a>
-  
-   
-<!--第二栏图标,DataCode, Members-->
+            <!--第四栏图标：Members-->
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 rightLogo">
+                    <a href="Members.html">
+                        <div class="box">
+                            <div class="box-img">
+                                <img src="imags\WebImg\Member_logo.jpg" >
+                            </div>
+                            <div class="box-content">
+                                <h4 class="title">Members</h4>
+                            </div>
+                        </div> <!--END BOX-->
+                    </a>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
 
-<a href="DownLoad.html">
-  <div class="col-md-4 col-sm-12"> 
-      <div class="box" >
-          <div class="box-img">
-            
-              <img src="imags\WebImg\DataCode_logo.jpg" >
-          </div>
-          <div class="box-content">
-              <h4 class="title">Data&amp;Code</h4>
-          </div>
-      </div> <!--END BOX-->
-  </div>
-</a>
+        </div> <!--结束右侧图像导航-->
+    </div><!--结束主体-->
 
-     
-   
-      
-<!--Members-->	
-<a href="Members.html">
-  <div class="col-md-4 col-sm-12">
-      <div class="box">
-          <div class="box-img">
-           
-              <img src="imags\WebImg\Member_logo.jpg" >
-          </div>
-          <div class="box-content">
-              <h4 class="title">Members</h4>
-          </div>
-      </div> <!--END BOX-->
-  </div>
-</a>
-
-</div> <!--End Content-right-->
-    
-</div> <!--End Content-->
+    <!--版权-->
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-xs-12 text-center">
+            <div style="background-color: #999;height: 3px;margin-bottom: 10px;"></div>
+            <div style="background-color: #ccc;height: 65px;padding-top: 20px;">
+                <span>© Copyright 2018, inc. All rights reserved.</span>
+            </div>
+        </div>
+    </div> <!--结束版权-->
+</div>
 
 
 </body>
+
 </html>

@@ -2,14 +2,12 @@
 /* CSS Document */
 
 #HeadTitle{
-	position:fixed;
-	height:13%;
-	width: 100%;
-	margin:0 auto;
+	height:80px;
+	background-color: #101938;
     background-image: url(../imags/WebImg/Head.jpg);
-	z-index: 500;
 	background-repeat: no-repeat;
-	
+	display: table-cell;
+	vertical-align: middle;
 }
 
 
@@ -22,19 +20,22 @@
 /*设置导航条*/
 
 
-#Navigation{margin-top:2.5%;float:right;margin-right:6%;
-			font-family:Arial;font-size:0.875em;
-			}
+#Navigation{
+	float:right;
+	font-family:Arial;
+	/*width: 970px;*/
+	padding: 30px;
+}
 
 #Navigation ul{
 	list-style-type:none;
 	}
 	
-#Navigation ul li{
-	float: left;
-	margin-left: 15px;
-		
-}
+/*#Navigation ul li{*/
+	/*float: left;*/
+	/*margin-left: 15px;*/
+		/**/
+/*}*/
 
 
 #Navigation  a{
@@ -48,5 +49,7 @@
 #Navigation a:hover{
     color:red;	/*背景透明，字体不透明*/
 }
+
+
 
 
