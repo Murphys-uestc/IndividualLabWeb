@@ -6,11 +6,24 @@
     Font-style:italic;
     font-weight:bold;
 }
+<<<<<<< HEAD
+.main{
+	padding: 0 70px;
+	margin-top: 10px;
+}
+
+.PubContent {
+	padding-top: 10px;
+	font-family: Arial;
+}
+
+=======
 .PubContent{ 
 	padding-top:10px;
 	font-family:Arial;
 
 }/*上右下左,顺时针*/
+>>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
 
 
 .PubContent h1 {
@@ -51,4 +64,9 @@
 	color:red;
 	text-decoration: NONE
 
+<<<<<<< HEAD
 }
+
+=======
+}
+>>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
