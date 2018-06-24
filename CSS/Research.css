@@ -1,0 +1,156 @@
+.BigTitle_div {
+    opacity: 1;
+    font-family:Perpetua;
+    text-align:center;
+    font-size:2em;
+    Font-style:italic;
+    font-weight:bold;
+}
+.main{
+    padding: 0 70px;
+    margin-top: 10px;
+}
+
+/*图片跟随文字*/
+.carousel-text{
+    background-color: #e5e5e5;
+    text-align: center;
+}
+.carousel-text h3{font-family:Arial;font-size:14px;text-align:center;Font-style:italic;font-weight: bold;}
+.carousel-text p{font-family:Arial;font-size:14px;text-align:center;}
+
+/*覆盖bootstrap自带carousel-indicators的定位样式*/
+.carousel-indicators{
+    background-color: #e5e5e5;
+    position: static;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    margin-top: -10px;
+}
+.carousel-indicators li{
+    border: 1px solid #aaa;
+    background-color:#aaa;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #555;
+}
+
+/*覆盖原来的carousel-control样式*/
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: none;
+
+    display: none;
+}
+
+.rightControl {
+    right: 0;
+    left: auto;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    top: 40%;
+}
+.carousel:hover .carousel-control{
+    color: #aaa;
+    display: block;
+}
+
+/*四个研究方向*/
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: -5px;
+}
+#accordion .panel-heading{
+    padding:0;
+    border-radius: 0;
+    border: none;
+    text-align:left;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 25px 60px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #808080;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a:hover{
+    font-size: 17px;
+}
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
+    content: "\f067";
+    font-family: FontAwesome;
+    font-size: 15px;
+    font-weight: 200;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    transform: rotate(135deg);
+    transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed:after{
+    transform: rotate(0deg);
+}
+#accordion .panel-body{
+    padding: 0 0 0 20px;
+    border: none;
+    position: relative;
+}
+#accordion .panel-body p{
+    font-size: 14px;
+    color: #333;
+    line-height: 25px;
+    padding: 5px;
+    margin: 0;
+    font-family:'Roboto Condensed', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: bold;
+}
+
+#accordion .panel-body li{
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    padding: 3px;
+    margin: 0;
+}
+
+#accordion .panel-collapse .panel-body p{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#accordion .panel-collapse .panel-body li{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#accordion .panel-collapse.in .panel-body p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#accordion .panel-collapse.in .panel-body li{
+    opacity: 1;
+    transform: scale(1);
+}

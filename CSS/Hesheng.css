@@ -6,17 +6,11 @@
     Font-style:italic;
     font-weight:bold;
 }
-.Subtitle{
-    font-family:Perpetua;
-    font-size:24px;
-    font-weight:bold;
-    Font-style:italic;
-    line-height:2em;
+#Content_div {
+    font-family:Arial;
+    text-align:justify;
 }
 .main{
     padding: 0 70px;
     margin-top: 10px;
-}
-.peopleList{
-    margin-left: 20px
 }

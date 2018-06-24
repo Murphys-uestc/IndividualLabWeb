@@ -2,89 +2,79 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<!--viewport是网页默认的宽度和高度，网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100% -->
 
 <title>LiuLab|Collaborators</title>
 
-<!--添加导航条的有关css js-->
-<link rel="stylesheet" href="CSS/Collaborators_Template.css" type="text/css" />
-<link rel="stylesheet" href="CSS/Frames_Template.css" type="text/css" />
-<script type="text/javascript" src="CSS/NavigationBars.js"></script>
-
-<!--添加动态图显示的有关css js-->
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="stylesheet" type="text/css" href="CSS/Collaborators.css">
 <script type="text/javascript" src="CSS/jquery.min.js"></script>
 
-
-<style type="text/css">
-*{margin:0; padding:0}<!--初始化代码，使网页顶格显示-->
-
-body,td,th {
-	font-family: Verdana, Geneva, sans-serif;
-}
-</style>
 </head>
 
 <body>
 
-<div id = "HeadTitle">
-  <div id="Navigation">
-   <ul>
-      <li><a href="Home.html" >Home</a></li>
-      <li><a href="Research.html">Research</a></li> 
-      <li><a href="Members.html">Members</a></li>
-   
-      <li><a href="Publications.html">Publications</a></li>
-      <li><a href="DownLoad.html">Data&Code</a></li> 
-      <li><a href="News.html">News</a></li>
-      <li><a href="Colaborators.html" style="color:red;">Collaborators</a></li>
-      <li><a href="Hesheng.html">DR. Hesheng</a></li>
-    </ul>
-  </div>  <!--end navigation-->
-
-</div> <!--end HeadTitle-->
-
-
-
-<div id="content">
-
-<!--显示hesheng-->
-
-<div id = "BigTitle_div" >
-  Collaborators
-  <hr style="border:1px solid ##808080; height:0.1px" />
-</div>
-<div id = "Content_div">
-<div class = "left_div">
-<li><a href="https://cnl.rc.fas.harvard.edu/people/#ppl_Buckner">Randy Buckner (Harvard University)</a></li>
-    <li><a href="https://www.urmc.rochester.edu/people/20165505-suzanne-n-haber">Suzanne Haber (University of Rochester Medical Center)</a></li>
-    <li><a href="https://vivo.brown.edu/display/srasmuss">Steven A. Rasmussen (Brown University)</a></li>
-    <li><a href="http://phillips.pitt.edu/">Mary L. Phillips (University of Pittsburgh)</a></li>
-    <li><a href="https://md.rcm.upr.edu/quirk/">Greg Quirk (University of Puerto Rico)</a></li>
-    <li><a href="http://www.bidmc.org/Centers-and-Departments/Departments/Neurology/Parkinsons-Disease-and-Movement-Disorders/Our-Team/Michael-Fox-MD-PhD.aspx">Michael Fox (Beth Israel Deaconess Medical Center)</a></li>
-    <li><a href="http://www.ece.cornell.edu/people/profile.cfm?netid=ms3375">Mert Sabuncu ( Cornell University)</a></li>
-    <li> <a href="http://holmeslab.yale.edu/">Avram Holmes (Yale University)</a></li>
-    <li><a href="http://www.mcleanhospital.org/biography/dost-ongur">Dost Öngür (McLean Hospital)</a></li>
-    
-    </div>
-    
-    
-    <div class = "right_div"> 
-    <li><a href="http://www.mcleanhospital.org/biography/justin-baker">Justin Baker (McLean Hospital)</a></li>
-
-    <li><a href="https://sites.google.com/site/yeoyeo02/home">Thomas Yeo (National University of Singapore)</a></li>
-    <li><a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/51423/">Daphne Holt (Harvard)</a></li>
-    <li><a href="http://roffmanlab.mgh.harvard.edu/">Joshua Roffman (Harvard)</a></li>
-    <li><a href="http://www.neuromind.org/">Steven M.Stufflebeam (Harvard)</a></li>
- 
-    <li><a href="https://scholar.google.com/citations?user=qSIysB4AAAAJ&amp;hl=en&amp;oi=ao">Bo Hong (Tsinghua University)</a></li>
-    <li><a href="http://www.tsinghua.edu.cn/publish/hy/1734/2010/20101219162616361971951/20101219162616361971951_.html">Luming Li (Tsinghua University)</a></li>
-    <li><a href="http://brainhealthy.net/">Kai Wang (Anhui Medical University)</a></li>
+    <div class="container">
+        <!--标题栏-->
+          <div class="row">
+              <div class="col-xs-12 HeadTitle">
+                  <ul class="nav nav-pills Navigation">
+                      <li><a href="Home.html" >Home</a></li>
+                      <li><a href="Research.html">Research</a></li> 
+                      <li><a href="Members.html">Members</a></li>
+                   
+                      <li><a href="Publications.html">Publications</a></li>
+                      <li><a href="DownLoad.html">Data&Code</a></li> 
+                      <li><a href="News.html">News</a></li>
+                      <li><a href="Colaborators.html" style="color:red;">Collaborators</a></li>
+                      <li><a href="Hesheng.html">DR. Hesheng</a></li>
+                    </ul>
+              </div>
+            </div><!--结束标题栏-->
   
-</div>
-
-
-  </div>  <!-- end the Content_div-->
-</div> <!-- end the Content-->
+            <div class="row main">
+                <div class="col-xs-12">
+                    <div class="BigTitle_div">Collaborators</div>
+                    <hr style="border:1px solid #808080; height:0.1px" />
+                </div>
+            </div>
+            <div class="row main">
+                <div class="col-xs-6">
+                    <ul class="collaboratorsUl">
+                        <li><a href="https://cnl.rc.fas.harvard.edu/people/#ppl_Buckner">Randy Buckner (Harvard University)</a></li>
+                        <li><a href="https://www.urmc.rochester.edu/people/20165505-suzanne-n-haber">Suzanne Haber (University of Rochester Medical Center)</a></li>
+                        <li><a href="https://vivo.brown.edu/display/srasmuss">Steven A. Rasmussen (Brown University)</a></li>
+                        <li><a href="http://phillips.pitt.edu/">Mary L. Phillips (University of Pittsburgh)</a></li>
+                        <li><a href="https://md.rcm.upr.edu/quirk/">Greg Quirk (University of Puerto Rico)</a></li>
+                        <li><a href="http://www.bidmc.org/Centers-and-Departments/Departments/Neurology/Parkinsons-Disease-and-Movement-Disorders/Our-Team/Michael-Fox-MD-PhD.aspx">Michael Fox (Beth Israel Deaconess Medical Center)</a></li>
+                        <li><a href="http://www.ece.cornell.edu/people/profile.cfm?netid=ms3375">Mert Sabuncu ( Cornell University)</a></li>
+                        <li> <a href="http://holmeslab.yale.edu/">Avram Holmes (Yale University)</a></li>
+                        <li><a href="http://www.mcleanhospital.org/biography/dost-ongur">Dost Öngür (McLean Hospital)</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="collaboratorsUl">
+                        <li><a href="http://www.mcleanhospital.org/biography/justin-baker">Justin Baker (McLean Hospital)</a></li>
+                        <li><a href="https://sites.google.com/site/yeoyeo02/home">Thomas Yeo (National University of Singapore)</a></li>
+                        <li><a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/51423/">Daphne Holt (Harvard)</a></li>
+                        <li><a href="http://roffmanlab.mgh.harvard.edu/">Joshua Roffman (Harvard)</a></li>
+                        <li><a href="http://www.neuromind.org/">Steven M.Stufflebeam (Harvard)</a></li>
+                        <li><a href="https://scholar.google.com/citations?user=qSIysB4AAAAJ&amp;hl=en&amp;oi=ao">Bo Hong (Tsinghua University)</a></li>
+                        <li><a href="http://www.tsinghua.edu.cn/publish/hy/1734/2010/20101219162616361971951/20101219162616361971951_.html">Luming Li (Tsinghua University)</a></li>
+                        <li><a href="http://brainhealthy.net/">Kai Wang (Anhui Medical University)</a></li>
+                    </ul>
+                </div>
+            </div>
+  
+          <!--版权-->
+          <div class="row" style="margin-top: 50px;">
+              <div class="col-xs-12 text-center">
+                  <div style="background-color: #999;height: 3px;margin-bottom: 10px;"></div>
+                  <div style="background-color: #ccc;height: 65px;padding-top: 20px;">
+                      <span>© Copyright 2018,  Liu Lab. All rights reserved.</span>
+                  </div>
+              </div>
+          </div> <!--结束版权-->
+      </div>
 </body>
 </html>

@@ -4,88 +4,72 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>LiuLab|News</title>
 
-<!--添加导航条的有关css js-->
-<link rel="stylesheet" href="CSS/News_Template.css" type="text/css" />
-<link rel="stylesheet" href="CSS/Frames_Template.css" type="text/css" />
-<script type="text/javascript" src="CSS/NavigationBars.js"></script>
-
-<!--添加动态图显示的有关css js-->
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link rel="stylesheet" type="text/css" href="CSS/News.css">
 <script type="text/javascript" src="CSS/jquery.min.js"></script>
 
-
-<style type="text/css">
-*{margin:0; padding:0}<!--初始化代码，使网页顶格显示-->
-
-body,td,th {
-	font-family: Verdana, Geneva, sans-serif;
-}
-</style>
 </head>
 
 <body>
 
-<div id = "HeadTitle">
-  <div id="Navigation">
-   <ul>
-      <li><a href="Home.html" >Home</a></li>
-      <li><a href="Research.html">Research</a></li>
-      <li><a href="Members.html">Members</a></li>
-      
-      <li><a href="Publications.html">Publications</a></li>
-      <li><a href="DownLoad.html">Data&amp;Code</a></li> 
-      <li><a href="#" style="color:red;">News</a></li>
-      <li><a href = "Collaborators.html">Collaborators</a></li>
-      <li><a href="Hesheng.html">DR. Hesheng</a></li>
-    </ul>
-  </div>  <!--end navigation-->
-
-</div> <!--end HeadTitle-->
-
-
-
-<div id="content">
-
-<div id = "BigTitle_div" >
-Latest News
-  <hr style="border:1px solid ##808080; height:0.1px" />
-</div>
-<div id = "Content_div">
-
-<div class="display_div" >
-  <ul>
-    <li>11/2015,Our work Wang et al. 2015, Parcellating cortical functional networks in individuals, was reported,<br/>
-        <a href = "https://www.nmr.mgh.harvard.edu/news/20151109/new-technique-paves-way-clinical-application-fmri" target="_blank">https://www.nmr.mgh.harvard.edu/news/20151109/new-technique-paves-way-clinical-application-fmri</a><br/>
-        <a href = "http://nature.bio1000.com/neuroscience/201511/2292.html" target="_blank">http://nature.bio1000.com/neuroscience/201511/2292.html        </a>
-    </li>
-    
-     <li>06/2015,Our work Mueller et al. 2015, Abnormalities in Hemispheric Specialization of Caudate Nucleus Connectivity in Schizophrenia, was reported<br/>
-        <a href = "http://www.healthylivingmagazine.us/Articles/9044/" target="_blank">http://www.healthylivingmagazine.us/Articles/9044/</a><br/>
-    </li> 
-    
-    
-    <li>02/2013,Our work Mueller et al. 2013, Individual Variability in Functional Connectivity Architecture of the Human Brain,was reported<br/>
-        <a href = "https://www.eurekalert.org/pub_releases/2013-02/cp-brp013013.php" target="_blank">https://www.eurekalert.org/pub_releases/2013-02/cp-brp013013.php</a><br/>
-        <a href = "https://www.sciencedaily.com/releases/2013/02/130206131048.html" target="_blank">https://www.sciencedaily.com/releases/2013/02/130206131048.html</a>
-    </li> 
-    
-    
-     <li>Other Collaborative Projects:<br/>
-        <a href = "http://www.balzan.org/en/prizewinners/brenda-milner/research-project-milner" target="_blank">http://www.balzan.org/en/prizewinners/brenda-milner/research-project-milner</a><br/>
-        <a href = "https://www.urmc.rochester.edu/pharmacology-physiology/Research/conte-center/Investigators.aspx" target="_blank">https://www.urmc.rochester.edu/pharmacology-physiology/Research/conte-center/Investigators.aspx</a>
-    </li>
-    
-    
-    
-    
-  </ul>
-</div>
-
-   
-
-</div>
+    <div class="container">
+        <!--标题栏-->
+          <div class="row">
+              <div class="col-xs-12 HeadTitle">
+                  <ul class="nav nav-pills Navigation">
+                    <li><a href="Home.html" >Home</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Members.html">Members</a></li>
+                    
+                    <li><a href="Publications.html">Publications</a></li>
+                    <li><a href="DownLoad.html">Data&amp;Code</a></li> 
+                    <li><a href="#" style="color:red;">News</a></li>
+                    <li><a href = "Collaborators.html">Collaborators</a></li>
+                    <li><a href="Hesheng.html">DR. Hesheng</a></li>
+                  </ul>
+              </div>
+            </div><!--结束标题栏-->
   
-
-  </div>  <!-- end the Content_div-->
-</div> <!-- end the Content-->
+            <div class="row main">
+                <div class="col-xs-12">
+                    <div class="BigTitle_div">Latest News</div>
+                    <hr style="border:1px solid #808080; height:0.1px" />
+                    <ul class="newsUl">
+                        <li>11/2015,Our work Wang et al. 2015, Parcellating cortical functional networks in individuals, was reported,<br/>
+                            <a href = "https://www.nmr.mgh.harvard.edu/news/20151109/new-technique-paves-way-clinical-application-fmri" target="_blank">https://www.nmr.mgh.harvard.edu/news/20151109/new-technique-paves-way-clinical-application-fmri</a><br/>
+                            <a href = "http://nature.bio1000.com/neuroscience/201511/2292.html" target="_blank">http://nature.bio1000.com/neuroscience/201511/2292.html        </a>
+                        </li>
+                        
+                         <li>06/2015,Our work Mueller et al. 2015, Abnormalities in Hemispheric Specialization of Caudate Nucleus Connectivity in Schizophrenia, was reported<br/>
+                            <a href = "http://www.healthylivingmagazine.us/Articles/9044/" target="_blank">http://www.healthylivingmagazine.us/Articles/9044/</a><br/>
+                        </li> 
+                        
+                        
+                        <li>02/2013,Our work Mueller et al. 2013, Individual Variability in Functional Connectivity Architecture of the Human Brain,was reported<br/>
+                            <a href = "https://www.eurekalert.org/pub_releases/2013-02/cp-brp013013.php" target="_blank">https://www.eurekalert.org/pub_releases/2013-02/cp-brp013013.php</a><br/>
+                            <a href = "https://www.sciencedaily.com/releases/2013/02/130206131048.html" target="_blank">https://www.sciencedaily.com/releases/2013/02/130206131048.html</a>
+                        </li> 
+                        
+                        
+                         <li>Other Collaborative Projects:<br/>
+                            <a href = "http://www.balzan.org/en/prizewinners/brenda-milner/research-project-milner" target="_blank">http://www.balzan.org/en/prizewinners/brenda-milner/research-project-milner</a><br/>
+                            <a href = "https://www.urmc.rochester.edu/pharmacology-physiology/Research/conte-center/Investigators.aspx" target="_blank">https://www.urmc.rochester.edu/pharmacology-physiology/Research/conte-center/Investigators.aspx</a>
+                        </li>
+                        
+                      </ul> 
+                </div>
+            </div>
+  
+          <!--版权-->
+          <div class="row" style="margin-top: 50px;">
+              <div class="col-xs-12 text-center">
+                  <div style="background-color: #999;height: 3px;margin-bottom: 10px;"></div>
+                  <div style="background-color: #ccc;height: 65px;padding-top: 20px;">
+                      <span>© Copyright 2018,  Liu Lab All rights reserved.</span>
+                  </div>
+              </div>
+          </div> <!--结束版权-->
+      </div>
 </body>
 </html>
