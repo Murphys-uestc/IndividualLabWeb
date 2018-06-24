@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+#HeadTitle{
+	height:80px;
+	background-color: #101938;
+    background-image: url(../imags/WebImg/Head.jpg);
+	background-repeat: no-repeat;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#BigTitle_div {
+	margin:3% 0 0 0;opacity: 1;
+	font-family:Perpetua;text-align:center;font-size:2em;Font-style:italic;font-weight:bold;
+}
+	
+
+/*设置导航条*/
+
+
+#Navigation{
+	float:right;
+	font-family:Arial;
+	/*width: 970px;*/
+	padding: 30px;
+}
+
+#Navigation ul{
+	list-style-type:none;
+	}
+	
+/*#Navigation ul li{*/
+	/*float: left;*/
+	/*margin-left: 15px;*/
+		/**/
+/*}*/
+
+
+#Navigation  a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #FFF;	
+}
+
+
+#Navigation a:hover{
+    color:red;	/*背景透明，字体不透明*/
+}
+
+
+
+
