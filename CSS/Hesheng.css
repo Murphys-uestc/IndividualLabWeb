@@ -2,18 +2,17 @@
     opacity: 1;
     font-family:Perpetua;
     text-align:center;
-    font-size:2em;
+    font-size:30px;
     Font-style:italic;
     font-weight:bold;
 }
-#Content_div {
+.Content_div{
     font-family:Arial;
     text-align:justify;
-<<<<<<< HEAD
+    text-justify:inter-ideograph;
 }
+
 .main{
     padding: 0 70px;
-    margin-top: 10px;
-=======
->>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
+    margin-top: 30px;
 }

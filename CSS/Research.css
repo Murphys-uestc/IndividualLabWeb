@@ -2,16 +2,20 @@
     opacity: 1;
     font-family:Perpetua;
     text-align:center;
-    font-size:2em;
+    font-size:30px;
     Font-style:italic;
     font-weight:bold;
-<<<<<<< HEAD
+    margin-bottom: 0;
 }
 .main{
     padding: 0 70px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
-
+/*轮播图片*/
+.carouselImg{
+    /*width: 50%;*/
+    margin: 0 auto;
+}
 /*图片跟随文字*/
 .carousel-text{
     background-color: #e5e5e5;
@@ -154,6 +158,4 @@
 #accordion .panel-collapse.in .panel-body li{
     opacity: 1;
     transform: scale(1);
-=======
->>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
 }

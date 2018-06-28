@@ -2,14 +2,14 @@
     opacity: 1;
     font-family:Perpetua;
     text-align:center;
-    font-size:2em;
+    font-size:30px;
     Font-style:italic;
     font-weight:bold;
+	margin-bottom: 0;
 }
-<<<<<<< HEAD
 .main{
 	padding: 0 70px;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 .PubContent {
@@ -17,13 +17,11 @@
 	font-family: Arial;
 }
 
-=======
-.PubContent{ 
+.PubContent{
 	padding-top:10px;
 	font-family:Arial;
 
 }/*上右下左,顺时针*/
->>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
 
 
 .PubContent h1 {
@@ -64,9 +62,5 @@
 	color:red;
 	text-decoration: NONE
 
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
