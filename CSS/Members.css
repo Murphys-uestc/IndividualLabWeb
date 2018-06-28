@@ -2,24 +2,28 @@
     opacity: 1;
     font-family:Perpetua;
     text-align:center;
-    font-size:2em;
+    font-size:30px;
     Font-style:italic;
     font-weight:bold;
+    margin-bottom: 0;
 }
 .Subtitle{
     font-family:Perpetua;
     font-size:24px;
     font-weight:bold;
     Font-style:italic;
-    line-height:2em;
+    margin-bottom: 5px;
 }
-<<<<<<< HEAD
 .main{
     padding: 0 70px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .peopleList{
-    margin-left: 20px
+    margin-left: 30px
 }
-=======
->>>>>>> f8820075db9f8314924aba3acff9d614bb20ff61
+.peopleList li{
+    margin-top: 10px;
+}
+.table tbody tr td{
+    border-top: none;
+}
