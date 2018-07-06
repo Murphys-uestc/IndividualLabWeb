@@ -6,9 +6,11 @@
     Font-style:italic;
     font-weight:bold;
 }
+.head{
+    margin-top: 30px;
+}
 .main{
     padding: 0 70px;
-    margin-top: 30px;
     font-family:Arial;
     Font-style:italic;
 }

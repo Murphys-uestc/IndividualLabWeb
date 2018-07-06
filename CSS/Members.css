@@ -18,12 +18,44 @@
     padding: 0 70px;
     margin-top: 30px;
 }
+.main a,.main p{
+    font-family: Arial;
+    font-size: 14px;
+    margin: 0;
+
+}
+.principal td:nth-child(1){
+    width: 12%;
+}
+.principal td:nth-child(2){
+    width: 46%;
+}
+.principal td:nth-child(3){
+    width: 40%;
+}
+.current td:nth-child(1){
+    width: 12%;
+}
+.current td:nth-child(2){
+    width: 38%;
+}
+.current td:nth-child(3){
+    width: 12%;
+}
+.current td:nth-child(4){
+    width: 38%;
+}
 .peopleList{
-    margin-left: 30px
+    margin-left: 30px;
+    margin-top: 0;
 }
 .peopleList li{
     margin-top: 10px;
 }
 .table tbody tr td{
     border-top: none;
+    text-align:justify;
+    text-justify:inter-ideograph;
+    font-family: Arial;
+    font-size: 14px;
 }
