@@ -12,6 +12,11 @@
 .main{
     padding: 0 70px;
     font-family:Arial;
-    Font-style:italic;
+    Font-style:normal;
 }
+.main h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
 
